@@ -21,4 +21,4 @@ This architecture ensures scalability and compatibility with diverse systems, le
 ### Application Design Overview
 Below is a high-level overview of what the project offers.
 
-![alt text](https://github.com/1nnu/Java-React-Password-Manager/blob/[branch]/Passman_diagram.png?raw=true)
+![alt text](https://github.com/1nnu/Java-React-Password-Manager/blob/main/images/Passman_diagram.png)
