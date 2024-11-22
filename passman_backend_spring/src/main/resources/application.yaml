@@ -1,0 +1,24 @@
+http.port: 8080
+spring:
+  application:
+    name: passman
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:~/passman/testdb;CIPHER=AES;FILE_LOCK=SOCKET;INIT=runscript from 'classpath:schema.sql'
+    username: #insert username#
+    password: #insert password#
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: none
+server.ssl:
+  port: 8443
+  protocol: TLS
+  enabled-protocols: TLSv1.2
+  enabled: true
+  key-store: classpath:keystore/passman.p12
+  key-store-password: #insert password#
+  key-store-type: PKCS12
+  key-alias: passman
