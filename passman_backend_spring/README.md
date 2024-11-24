@@ -33,6 +33,27 @@ Run project
 ./graldew bootRun
 ```
 
+## Build and Run with Docker
+Build the Docker Image
+Ensure you have Docker installed and running.
+Navigate to the project directory where your Dockerfile is located.
+
+Build the Docker image:
+```
+docker build -t passman-backend .
+```
+
+Run the Docker Container
+Start the container:
+
+```
+docker run -d -p 8080:8080 --name passman-backend-container passman-backend
+```
+
+Stop the container:
+```
+docker stop passman-backend-container
+```
 ## Features
 
 - JUnit: For writing tests.

@@ -6,8 +6,8 @@ spring:
     console.enabled: true
   datasource:
     url: jdbc:h2:~/passman/testdb;CIPHER=AES;FILE_LOCK=SOCKET;INIT=runscript from 'classpath:schema.sql'
-    username: #insert username#
-    password: #insert password#
+    username: sa
+    password: 123 123
     driverClassName: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
@@ -19,6 +19,6 @@ server.ssl:
   enabled-protocols: TLSv1.2
   enabled: true
   key-store: classpath:keystore/passman.p12
-  key-store-password: #insert password#
+  key-store-password: password123
   key-store-type: PKCS12
   key-alias: passman
